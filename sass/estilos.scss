@@ -1,0 +1,433 @@
+@import "generales";
+@import "index";
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.asidenosotros{
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 30px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.segundo-parrafo{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#color{
+    color: aqua;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+header{
+    background-color: floralwhite;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 20px;
+    margin: 40px;
+    text-align: end;
+    border: 3px solid black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.cartera1{
+    width: 15%;
+    margin-top: 10px;
+    padding: 80px;
+}
+
+.cartera2{
+    width: 15%;
+    margin-top: 10px;
+    padding: 80px;
+}
+
+.cartera3{
+    width: 15%;
+    margin-top: 10px;
+    padding: 80px;
+}
+
+.cartera4{
+    width: 15%;
+    margin-top: 5px;
+    padding: 80px;
+}
+
+
+h2{
+    margin-top: 1px;
+    font-size: 140%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-area: h2;
+}
+
+.contacto{
+    text-align: center;
+    font-size: 50px;
+}
+
+.contacto2{
+    text-align: center;
+    font-size: 40px;
+}
+.historiacoronadas{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.parrafo2{
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.col{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto1{
+    position: relative;
+    vertical-align: text-bottom;
+}
+
+.texto2{
+    position: absolute;
+    top: 650px;
+    right: 1600px;
+    font-size: 25px;
+}
+
+.texto3{
+    position: absolute;
+    top: 650px;
+    right: 1150px;
+    font-size: 25px;
+}
+
+.texto4{
+    position: absolute;
+    top: 650px;
+    right: 700px;
+    font-size: 25px;
+}
+
+.icono{
+    width: 48px;
+    height: 48px;
+    top: 80px;
+}
+
+footer{
+    background-color: grey;
+    padding: 60px;
+    margin-top: 55px;
+}
+
+.sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.pequeña{
+    width: 1%;
+    position: relative;
+}
+
+.asidenosotros{
+    grid-area: aside;
+    font-size: 50px;
+}
+
+.descripcion{
+    grid-area: ds;
+}
+
+.imagennosotros{
+    grid-area: img;
+    width: 80%;
+    height: 100%;
+}
+
+.segundo-parrafo{
+    grid-area: sp;
+}
+
+h2{
+    grid-area: h2;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.grilla{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40%;
+    grid-template-rows: 30%;
+    grid-template-areas: 
+    "aside aside aside"
+    "ds   ds   img"
+    "ds   ds   img"
+    "h2  footer footer";
+}
+
+.descripcion{
+    font-size: 150%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+}
+.cuadro{
+    padding-left: auto;
+}
+
+.imgi{
+    width: 50%;
+    margin: 30px;
+}
+
+.col{
+    margin: 0;
+    margin-left: 20%;
+    margin-top: 3%;
+    display: grid;
+    width: 70%;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "cartera1 cartera2"
+    "   p1       p2   "
+    "cartera3  cartera4"
+    "   p3        p4   ";
+    
+}
+
+@media (max-width: 560px){
+    .col{
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        " cartera1"
+        "    p1   "
+        " cartera2"
+        "    p2   "
+        " cartera3"
+        "    p3   "
+        " cartera4"
+        "    p4   "
+        ;
+    }
+}
+
+@media (max-width: 560px){
+    .grilla{
+        margin: 0;
+        grid-template-areas: 
+        "aside"
+        "ds"
+        "img"
+        "h2"
+        "footer";
+    }
+}
+
+.p1{
+    grid-area: p1;
+    font-size: 100%;
+}
+
+.p2{
+    grid-area: p2;
+    font-size: 100%;
+}
+
+
+
+.p3{
+    grid-area: p3;
+    font-size: 100%;
+}
+
+
+.p4{
+    grid-area: p4;
+    font-size: 100%;
+}
+
+.cartera1{
+    grid-area: cartera1;
+    width: 40%;
+}
+
+.cartera2{
+    grid-area: cartera2;
+    width: 40%;
+}
+
+.cartera3{
+    grid-area: cartera3;
+    width: 40%;
+}
+
+.cartera4{
+    grid-area: cartera4;
+    width: 40%;
+}
+
+.cartera1:hover{
+    transform: scale(2);
+}
+
+.cartera1{
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.cartera2:hover{
+    transform: scale(2);
+}
+
+.cartera2{
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.cartera3:hover{
+    transform: scale(2);
+}
+
+.cartera3{
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.cartera4:hover{
+    transform: scale(2);
+}
+
+.cartera4{
+    transition-property: all;
+    transition-duration: 3s;
+}
+.carruselcoronada{
+    width: 600px;
+    height: 600px;
+}
+
+.carruselcoronada2{
+    width: 600px;
+    height: 600px;
+}
+
+.carousel-control-next{
+    color: black;
+}
+
+.hh5{
+    color: red;
+    font-size: 300%
+}
+
+.label{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.label2{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.label3{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h1d{
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-left: 10%;
+
+}
+
+textarea{
+	width:50%;
+	height: 300px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+    margin-left: 30%;
+}
